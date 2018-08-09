@@ -1,0 +1,47 @@
+{
+  "name": "materiais",
+  "version": "0.0.1",
+  "description": "Web Components",
+  "main": "src/index.js",
+  "scripts": {
+    "watch:js": "webpack --w",
+    "make:js": "webpack --progress",
+    "make:style": "node-sass -r src/materiais.scss --output-style compressed > dist/style/materiais.min.css",
+    "doc": "jsdoc './src/index.js' -c jsdoc.json --verbose",
+    "serve": "webpack-dev-server -w",
+    "lint": "eslint .",
+    "build": "npm run lint && npm run doc && npm run make:js && npm run make:style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaizn-junior/materiais.git"
+  },
+  "keywords": [
+    "html",
+    "js",
+    "css",
+    "components",
+    "material",
+    "materiais"
+  ],
+  "author": "Simao Nziaka",
+  "license": "GNU 3.0",
+  "bugs": {
+    "url": "https://github.com/akaizn-junior/materiais/issues"
+  },
+  "homepage": "https://github.com/akaizn-junior/materiais#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "docdash": "^0.4.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.3.0",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.2.3",
+    "node-sass": "^4.9.2",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
