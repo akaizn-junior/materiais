@@ -1,0 +1,20 @@
+/* BARRA DE PROGRESSO */
+.mat.bdp {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.bdp {
+    background: orange;
+    border: 1px solid #ff7948;
+    border-radius: 4px;
+    color: rgb(75, 68, 68);
+}
+
+.bdp > span {
+    display: inline-block;
+    background: rgb(255, 206, 115);
+    border-radius: 4px;
+    text-align: center;
+}
+/* BARRA DE PROGRESSO */
