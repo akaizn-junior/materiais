@@ -1,0 +1,32 @@
+.mat.bdc {
+    margin-top: 5px;
+    min-width: 50px;
+}
+
+.bdc div {
+    display: inline-block;
+}
+
+.bdc div.line-numbers {
+    background: black;
+    color: white;
+    padding-left: 15px;
+}
+
+.bdc div.code {
+    background: #ffeece;
+}
+
+.bdc div.code pre:nth-child(2n) {
+    background: #fae1b4;
+}
+
+.bdc div.line-numbers pre {
+    margin: 5px;
+}
+
+.bdc div.code pre {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
