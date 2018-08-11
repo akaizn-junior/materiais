@@ -1,3 +1,4 @@
+/* BLOCO DE CODIGO */
 .mat.bdc {
     margin-top: 5px;
     min-width: 50px;
@@ -8,17 +9,12 @@
 }
 
 .bdc div.line-numbers {
-    background: black;
-    color: white;
-    padding-left: 15px;
+    padding-left: 5px;
+    text-align: right;
 }
 
 .bdc div.code {
-    background: #ffeece;
-}
-
-.bdc div.code pre:nth-child(2n) {
-    background: #fae1b4;
+    padding: 0;
 }
 
 .bdc div.line-numbers pre {
@@ -30,3 +26,24 @@
     margin-bottom: 5px;
     padding-right: 10px;
 }
+
+/* DEFAULT THEME */
+
+.bdc div.line-numbers {
+    background: black;
+    color: #ffeece;
+}
+
+.bdc div.code {
+    background: #ffeece;
+}
+
+.bdc div.code pre:nth-child(n) {
+    background: #ffe8be;
+}
+
+.bdc div.code pre:nth-child(2n) {
+    background: #fae1b4;
+}
+
+/* BLOCO DE CODIGO */

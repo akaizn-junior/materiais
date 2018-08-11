@@ -1,6 +1,10 @@
 export default function blocoDeCodigo() {
     //grab the element
     let matBdc = document.getElementsByClassName('mat bdc')[0];
+    //save the original content
+    const originalContent = matBdc.innerHTML;
+    //erase the original content
+    matBdc.innerHTML = '';
 
     //create line numbers' column
     let lineNumbersCol = document.createElement('div');
@@ -10,25 +14,22 @@ export default function blocoDeCodigo() {
     let codeCol = document.createElement('div');
     codeCol.setAttribute('class', 'code');
 
+    //sanitize original content from less-than symbols
+    const sanitizedContent = originalContent.replace(/</gm, '&lt;');
+
     //grab all the lines in the block of code
-    const lines = matBdc.innerHTML.split('\n');
+    const lines = sanitizedContent.split('\n');
 
-    //pass content original content to the codeCol
-    // codeCol.innerHTML = matBdc.innerHTML;
-    //erase the original content
-    matBdc.innerHTML = '';
-
-    //eliminate the extra first and last break line
+    // eliminate the extra first and last break line
     for(let i = 1; i < lines.length - 1; i++) {
-        console.log(lines[i]);
         //get the line numbers
         lineNumbersCol.innerHTML += `<pre>${i}</pre>`;
 
-        //pass each line of code as a pre text
+        //pass each line of code as a pre elements
         if(lines[i] !== '') {
-            codeCol.innerHTML += `<pre>${lines[i]}<pre>`;
+            codeCol.innerHTML += `<pre>${lines[i]}</pre>`;
         } else {
-            codeCol.innerHTML += '&nbsp;';
+            codeCol.innerHTML += '<pre>&nbsp;</pre>';
         }
     }
 

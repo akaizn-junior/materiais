@@ -9,7 +9,8 @@ import blocoDeCodigo from '../bloco_de_codigo/bdc.js';
  * []  Foto de perfil redonda
  * []  Acordiao
  * []  Banner
- * [x]  Bloco de codigo
+ * [x] Bloco de codigo
+ * []  Calendario
  */
 
 export default function materiais() {

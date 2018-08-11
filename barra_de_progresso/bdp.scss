@@ -5,16 +5,25 @@
 }
 
 .bdp {
-    background: orange;
-    border: 1px solid #ff7948;
     border-radius: 4px;
-    color: rgb(75, 68, 68);
 }
 
 .bdp > span {
     display: inline-block;
-    background: rgb(255, 206, 115);
     border-radius: 4px;
     text-align: center;
 }
+
+/* DEFAULT THEME */
+
+.bdp {
+    background: orange;
+    border: 1px solid #ff7948;
+    color: rgb(75, 68, 68);
+}
+
+.bdp > span {
+    background: rgb(255, 206, 115);
+}
+
 /* BARRA DE PROGRESSO */
