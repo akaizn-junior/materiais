@@ -1,15 +1,18 @@
 //import the components
-import barraDeProgresso from '../barra_de_progresso/bdp.js';
-import blocoDeCodigo from '../bloco_de_codigo/bdc.js';
+import barraDeProgresso from './barra_de_progresso/bdp.js';
+import blocoDeCodigo from './bloco_de_codigo/bdc.js';
 
 /**
  * Objectivos - Componentes a caminho e completos.
+ *
+ * [x]: done; [-]: in pogress; []: proposed
+ * if in progress provide a small description of the work being done.
  *
  * [x] Barra de progresso
  * []  Foto de perfil redonda
  * []  Acordiao
  * []  Banner
- * [x] Bloco de codigo
+ * [-] Bloco de codigo - needs a copy button: copies the code entirely.
  * []  Calendario
  */
 

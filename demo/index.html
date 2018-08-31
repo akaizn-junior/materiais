@@ -9,18 +9,25 @@
 </head>
 <body>
 
-    <div class="mat bdp">50:100</div>
+    <div class="mat bdp">50:110</div>
 
     <div class="mat bdc">
-        #include <iostream>
-        int main(int argc, char** argv)
-        {
-            std::cout << " Hello " << std::endl;
+        /* BLOCO DE CODIGO */
+        .mat.bdc {
+            margin-top: 5px;
+            min-width: 400px;
+        }
 
-            return 0;
+        .bdc div {
+            display: inline-block;
+        }
+
+        .bdc div.line-numbers {
+            padding-left: 5px;
+            text-align: right;
         }
     </div>
+    <script src="../dist/umd/materiais.min.js"></script>
 
-    <script src="../dist/umd/0.0.1/materiais.min.js"></script>
 </body>
 </html>

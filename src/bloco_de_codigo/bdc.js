@@ -14,8 +14,8 @@ export default function blocoDeCodigo() {
     let codeCol = document.createElement('div');
     codeCol.setAttribute('class', 'code');
 
-    //sanitize original content from less-than symbols
-    const sanitizedContent = originalContent.replace(/</gm, '&lt;');
+    //sanitized content
+    const sanitizedContent = sanitizeContent(originalContent);
 
     //grab all the lines in the block of code
     const lines = sanitizedContent.split('\n');
@@ -24,7 +24,6 @@ export default function blocoDeCodigo() {
     for(let i = 1; i < lines.length - 1; i++) {
         //get the line numbers
         lineNumbersCol.innerHTML += `<pre>${i}</pre>`;
-
         //pass each line of code as a pre elements
         if(lines[i] !== '') {
             codeCol.innerHTML += `<pre>${lines[i]}</pre>`;
@@ -37,3 +36,15 @@ export default function blocoDeCodigo() {
     matBdc.appendChild(lineNumbersCol);
     matBdc.appendChild(codeCol);
 }
+
+function sanitizeContent(originalContent) {
+    //sanitize content from less-than symbols
+    let sanitizedLT = originalContent.replace(/</gm, '&lt;');
+    //sanitize content from greater-than symbols
+    let sanitizedGT = sanitizedLT.replace(/>/gm, '&gt;');
+
+    return sanitizedGT;
+}
+
+//add syntax highlighting
+// function syntaxHighlighting() {}

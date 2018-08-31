@@ -9,13 +9,13 @@
     "templates": {
         "cleverLinks": true,
         "default": {
-            "outputSourcePath": false,
-            "outputSourceFiles": false
+            "outputSourcePath": true,
+            "outputSourceFiles": true
         }
     },
     "opts": {
         "destination": "docs",
-        "template": "node_modules/docdash",
+        "template": "node_modules/minami",
         "encoding": "utf8",
         "recursive": true
     }

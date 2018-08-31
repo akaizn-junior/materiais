@@ -2,3 +2,4 @@ dist
 cypress
 node_modules
 docs
+out

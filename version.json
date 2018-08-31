@@ -1,0 +1,12 @@
+{
+    "raw": "v0.0.1",
+    "major": "0",
+    "minor": "0",
+    "patch": "1",
+    "codeName": "toddler",
+    "full": "0.0.1",
+    "engines": {
+        "node": "10.2.1",
+        "npm:": "6.4.0"
+    }
+}

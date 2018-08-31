@@ -1,7 +1,7 @@
 /* BLOCO DE CODIGO */
 .mat.bdc {
     margin-top: 5px;
-    min-width: 50px;
+    min-width: 400px;
 }
 
 .bdc div {
@@ -32,6 +32,10 @@
 .bdc div.line-numbers {
     background: black;
     color: #ffeece;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .bdc div.code {
